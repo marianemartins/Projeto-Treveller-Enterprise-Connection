@@ -1,19 +1,3 @@
-// renderMenu();
-
-// function renderMenu() {
-//     for (var restaurante of restaurantes) {
-//         var ulElement = document.querySelector('ul');
-//         var liElement = document.createElement('li');
-//         var aElement = document.createElement('a');
-//         aElement.setAttribute('realtime',restaurante.url);
-//         aElement.setAttribute('href',include_path + restaurante.url);
-//         var aText = document.createTextNode(restaurante.nome);
-//         aElement.appendChild(aText);
-//         liElement.appendChild(aElement);
-//         ulElement.appendChild(liElement);
-//     }
-// }
-
 renderRestaurantes();
 
 function renderRestaurantes() {
@@ -78,11 +62,11 @@ function renderRestaurantes() {
 
         // Acessibilidade
         var divFlex = document.createElement('div');
-        divFlex.setAttribute('class','flex');
+        divFlex.setAttribute('class','possui flex');
 
         if (restaurante.acessibilidade.refeicaoLocal == 's') {
             var check = document.createElement('i');
-            check.setAttribute('class','possui fas fa-check');
+            check.setAttribute('class','fas fa-check');
             var pRefeicao = document.createElement('p');
             pRefeicao.appendChild(check);
             var textRefeicao = document.createTextNode('Refeição no local');
@@ -92,7 +76,7 @@ function renderRestaurantes() {
 
         if (restaurante.acessibilidade.caoGuia == 's') {
             var check = document.createElement('i');
-            check.setAttribute('class','possui fas fa-check');
+            check.setAttribute('class','fas fa-check');
             var pCaoGuia = document.createElement('p');
             pCaoGuia.appendChild(check);
             var textCaoGuia = document.createTextNode('Entrada de cães-guias');
@@ -102,7 +86,7 @@ function renderRestaurantes() {
 
         if (restaurante.acessibilidade.cardapioBraile == 's') {
             var check = document.createElement('i');
-            check.setAttribute('class','possui fas fa-check');
+            check.setAttribute('class','fas fa-check');
             var pCardapioBraile = document.createElement('p');
             pCardapioBraile.appendChild(check);
             var textCardapio = document.createTextNode('Cardápio em braile');
@@ -123,4 +107,4 @@ function renderRestaurantes() {
 
 
 // ToDo
-// Pull do projeto da Mari e testar
+// Colocar nota, estrelas e comentários na mesma div
