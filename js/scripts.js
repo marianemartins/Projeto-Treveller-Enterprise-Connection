@@ -49,15 +49,19 @@ function renderRestaurantes() {
         notaRestaurante.appendChild(textNota);
         stars.appendChild(notaRestaurante);
         
+        var avaliacao = document.createElement('div');
+        
         for (var i = 1; i <= restaurante.nota; i++) {
             var estrela = document.createElement('i');
             estrela.setAttribute('class','fas fa-star');
-            stars.appendChild(estrela);
+            avaliacao.appendChild(estrela);
         }
         
+        stars.appendChild(avaliacao);
+
         var quantidadeComentarios = document.createElement('p');
         quantidadeComentarios.setAttribute('class','marginleftsmall');
-        var textQtdComent = document.createTextNode(restaurante.qtdComentarios);
+        var textQtdComent = document.createTextNode('('+ restaurante.qtdComentarios + ')');
         quantidadeComentarios.appendChild(textQtdComent);
         var precoRestaurante = document.createElement('p');
         precoRestaurante.setAttribute('class','preco');

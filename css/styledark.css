@@ -40,7 +40,7 @@ color: white;
 
 /* #region Framework */
 
-@media (min-width: 801px) {
+@media (min-width: 817px) {
 
 
     .container {
@@ -69,6 +69,13 @@ color: white;
         align-items: center;
     }
 
+    
+    .wrap {
+
+        flex-wrap: wrap;
+
+
+    }
     .marginrigthsmall {
         margin-right: 8px;
     }
@@ -194,6 +201,7 @@ color: white;
         border-radius: 8px;
         border: solid 1px #424242;
         background-color: #4F4F4F;
+        width: 30%;
         ;
 
     }
@@ -216,6 +224,7 @@ color: white;
 
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
+        max-width: 100%;
 
     }
 
@@ -234,10 +243,12 @@ color: white;
     .stars {
 
         color: #ffffff;
+        justify-content: space-between;
     }
     .possui {
 
         color:  #adebc6;
+        
     }
 
     .flex_viewport {
@@ -270,7 +281,7 @@ color: white;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 816px) {
 
     .container {
         max-width: 1280px;
@@ -427,6 +438,7 @@ color: white;
         text-decoration: none;
         color: #333;
         border-radius: 8px;
+        width: 100%;
 
     }
 
@@ -440,7 +452,8 @@ color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+
 
     }
 
@@ -466,6 +479,7 @@ color: white;
     .stars {
 
         color: #ffffff;
+        justify-content: space-between;
     }
 
     .possui {
