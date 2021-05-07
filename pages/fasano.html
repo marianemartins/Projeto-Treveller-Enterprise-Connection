@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Projeto Traveller</title>
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <title>Restaurante Trattoria Fasano | Projeto Traveller</title>
 </head>
 
 <body>
+    <nav>
+        <div class="menu_acessibilidade flex container">
+            <a href="">Ir para conteúdo principal (Alt + 1)</a>
+            <div class="menu_acessibilidade_fonte">
+                <a class="switch_font" href="#">A+</a>
+                <a class="switch_font" href="#">A-</a>
+            </div> <!-- menu_acessibilidade_fonte -->
+            <div class="menu_acessibilidade_tema flex">
+                <p>Tema</p>
+                <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+                <label for="switch-shadow"></label>
+            </div> <!-- menu_acessibilidade_tema -->
+            <a href="">Acessibilidade do site (Alt + 2)</a>
+        </div> <!-- menu_acessibilidade -->
+    </nav>
+
     <header>
         <div class="container header">
-            <img class="logo" src="../images/header/Logo_Traveller.svg" alt="logo Traveller">
+            <a href="../index.html"><img class="logo" src="../images/header/Logo_Traveller.svg" alt="logo Traveller"></a>
             <div class="input_search flex space_between align_center">
                 <input type="search" name="pesquisa" id="pesquisa" placeholder="Buscar ponto turístico">
                 <i class="fas fa-search-location"></i>
+            </div> <!-- input-search -->
+        </div> <!-- container -->
     </header>
-
-    <div class="container flex column">
-        <div class="gastronomia_page">
-            <div class="breadcrumb">
-                <ul class="breadcrumb flex row link">
-                    <li><a class="link margin_left font_small" href="#">Home ></a></li>
-                    <li><a class="link margin_left font_small" href="../index.html">Gastronomia ></a></li>
-                    <li class=" margin_left font_small"><strong>Fasano</strong></li>
-                </ul>
-            </div> <!-- breadcrumb -->
-        </div>
-    </div>
+    
+    <div class="breadcrumb container">
+        <ul class="flex">
+            <a href="../index.html"><li>Home > </li></a>
+            <a href="../index.html"><li>Gastronomia > </li></a>
+            <a href="#"><li><strong>Trattoria Fasano</strong></li></a>
+        </ul>
+    </div> <!-- breadcrumb -->
 
     <section class="section_card">
         <main>
@@ -162,6 +177,10 @@
     <footer>
         <!-- Implementar footer -->
     </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/constants.js"></script>
+    <script src="../js/dark-mode.js"></script>
 </body>
 
 </html>

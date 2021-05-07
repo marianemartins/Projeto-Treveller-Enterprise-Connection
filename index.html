@@ -6,34 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Projeto Traveller</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <title>Restaurantes | Projeto Traveller</title>
 </head>
 
 <body>
-
-    <div class="topnav sticky" id="myTopnav">
-        <a href="#titulo" class="active">Ir para o título da página</a>
-        <a href="#listarestaurante">Ir para lista de restaurantes</a>
-        <a href="#acessibilidade"> Aumentar fonte (Ctrl e +)</a>
-        <a href="./indexdark.html">Mudar contraste</a>
-        <a href="#acessibilidade">Acessibilidade do site</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-      
-      
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    <nav>
+        <div class="menu_acessibilidade flex container">
+            <a href="">Ir para conteúdo principal (Alt + 1)</a>
+            <div class="menu_acessibilidade_fonte">
+                <a class="switch_font" href="#">A+</a>
+                <a class="switch_font" href="#">A-</a>
+            </div> <!-- menu_acessibilidade_fonte -->
+            <div class="menu_acessibilidade_tema flex">
+                <p>Tema</p>
+                <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+                <label for="switch-shadow"></label>
+            </div> <!-- menu_acessibilidade_tema -->
+            <a href="">Acessibilidade do site (Alt + 2)</a>
+        </div> <!-- menu_acessibilidade -->
+    </nav>
 
     <header>
         <div class="container header">
@@ -41,43 +34,34 @@
             <div class="input_search flex space_between align_center">
                 <input type="search" name="pesquisa" id="pesquisa" placeholder="Buscar ponto turístico">
                 <i class="fas fa-search-location"></i>
-            </div>
-        </div>
+            </div> <!-- input_search -->
+        </div> <!-- container -->
     </header>
+
+    <div class="breadcrumb container">
+        <ul class="flex">
+            <a href="#"><li>Home > </li></a>
+            <a href="#"><li><strong>Gastronomia</strong></li></a>
+        </ul>
+    </div> <!-- breadcrumb -->
 
     <main>
         <div class="container flex column">
-            <div class="hospedagem_page">
-                <div class="breadcrumb">
-                    <small>
-                        Home > <strong>Gastronomia</strong>
-                    </small>
-                </div> <!-- breadcrumb -->
-
-            </div>
-
             <div class="banner_imagem">
                 <div class="banner_text">
                     <h1>Gastronomia</h1>
-                </div>
-            </div>
+                </div> <!-- banner_text -->
+            </div> <!-- banner_imagem -->
 
             <section>
-
                 <div class="titulo_secao">
                     <h2>Restaurantes em São Paulo para sua tour gastronômica</h2>
                     <p>Escolha o seu destino abaixo</p>
-                </div>
+                </div> <!-- titulo_secao -->
 
-                <div class="cards flex wrap"></div>
-
-
-
+                <div class="cards flex wrap"></div> <!-- cards -->
             </section>
-
-        </div>
-
-
+        </div> <!-- container -->
     </main>
 
     <footer>
@@ -88,396 +72,8 @@
     <script src="js/constants.js"></script>
     <script src="js/restaurantes.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/loader.js"></script>
+    <script src="js/dark-mode.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-<!-- <a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div>
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png""
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png""
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-
-</div>
-
-
-<div class="cards">
-
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-
-</div>
-
-<div class="cards">
-
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p class="marginleftsmall">
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p class="marginleftsmall"">
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            </p class="marginleftsmall">
-            <p class="marginleftsmall">
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png"
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a>
-
-<a href="./pages/detalhes_ibis.html" target="_self" class="card">
-    <img class="image_card"
-        src="./image/cards-hospedagem/fachadadorestaurantefasano.png""
-        alt="Imagem da fachado do ibis localizado em Anhembi São Paulo" style="width:100%">
-    <div class="container_card">
-        <h4 class="maginbottommedium"><b>Trattoria Fasano</b></h4>
-
-        <div class="stars flex">
-            <p class="marginrigthsmall">5.0</p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p class="marginleftsmall">(3.450)</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="preco">$$$$</p>
-            <p class="marginleftrightsmall">.</p>
-            <p class="maginbottommedium">Italiana</p>
-        </div> 
-
-        <div class="flex ">
-
-            <p>
-                <i class="possui fas fa-check"></i>
-                Refeição no local
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Entrada de cães-guias
-            </p>
-            <p>
-                <i class="possui fas fa-check"></i>
-                Cardápio em braile
-            </p>
-
-
-        </div>
-
-    </div>
-</a> -->

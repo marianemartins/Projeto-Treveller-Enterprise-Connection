@@ -105,6 +105,5 @@ function renderRestaurantes() {
     }
 }
 
-
 // ToDo
 // Colocar nota, estrelas e comentários na mesma div
