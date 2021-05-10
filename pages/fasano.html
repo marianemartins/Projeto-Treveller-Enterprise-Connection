@@ -14,17 +14,17 @@
 <body>
     <nav>
         <div class="menu_acessibilidade flex container">
-            <a href="">Ir para conteúdo principal (Alt + 1)</a>
+            <a accesskey="1" href="#principal">Ir para conteúdo principal (Alt + 1)</a>
             <div class="menu_acessibilidade_fonte">
-                <a class="switch_font" href="#">A+</a>
-                <a class="switch_font" href="#">A-</a>
+                <a onClick="alterarFonte('a');" class="switch_font" href="#">A+</a>
+                <a onClick="alterarFonte('d');" class="switch_font" href="#">A-</a>
             </div> <!-- menu_acessibilidade_fonte -->
             <div class="menu_acessibilidade_tema flex">
                 <p>Tema</p>
                 <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
                 <label for="switch-shadow"></label>
             </div> <!-- menu_acessibilidade_tema -->
-            <a href="">Acessibilidade do site (Alt + 2)</a>
+            <a accesskey="2" href="acessibilidade.html">Acessibilidade do site (Alt + 2)</a>
         </div> <!-- menu_acessibilidade -->
     </nav>
 
@@ -46,7 +46,7 @@
         </ul>
     </div> <!-- breadcrumb -->
 
-    <section class="section_card">
+    <section class="section_card" id="principal">
         <main>
             <div class="container">
                 <div class="restaurante_card flex">
@@ -82,7 +82,10 @@
                         </div> <!-- restaurante_site -->
     
                         <div class="restaurante_descricao">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, blanditiis. Porro autem aperiam velit ratione quae sunt, nam nulla alias eius, veniam cupiditate itaque ipsum repellendus magnam adipisci optio, commodi earum nemo vero possimus quis id sit. Eius excepturi tenetur ea quam quaerat officia vitae ex debitis doloribus, fugit vel!</p>
+                            <p>O sofisticado endereço, no Itaim Bibi, resgata receitas clássicas e celebra a gastronomia do sul da Itália.
+                                Resultado de mais uma parceria entre o restaurateur Rogerio Fasano e o arquiteto Isay Weinfeld, a Trattoria 
+								conta com salão principal de 210 m2. Vasos, flâmulas e um acervo de uniformes dos times de futebol italianos compõem a decoração da casa.
+                            </p>
                         </div> <!-- restaurante_descricao -->
                     </div> <!-- card_content -->
                 </div> <!-- card -->
@@ -103,19 +106,19 @@
                     <div class="localizacao_content w60">
                         <div class="localizacao_endereco">
                             <strong>Endereço:</strong>
-                            <address>R. Iguatemi, s/n</address>
-                            <p>Horario de funcionamento</p>
-                            <p>Telefone</p>
+                            <address>R. Iguatemi, s/n - Itaim Bibi, São Paulo - SP, 01451-010</address>
+                            <p>Aberto de terça a domingo das 12h às 22h00</p>
+                            <p>+55 11 3167 3322</p>
                         </div> <!-- localizacao_endereco -->
     
                         <div class="localizacao_comochegar">
                             <strong>Como chegar:</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis culpa esse ullam ut impedit recusandae dolores, cum repellat aliq.</p>
+                            <p>Próximo as Avenidas Cidade Jardim e Brigadeiro Faria Lima.</p>
                         </div> <!-- localizacao_comochegar -->
     
                         <div class="localizacao_sobrearegiao">
                             <strong>Sobre a região:</strong>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis culpa esse ullam ut impedit recusandae dolores, cum repellat aliq.</p>
+                            <p>A Avenida Brigdadeiro Faria Lima, um dos polos empresariais e comerciais da cidade, é um dos principais atrativos. Além disso, a região é rica em diversidade gastronômica de alta qualidade.</p>
                         </div> <!-- localizacao_sobrearegiao -->
                     </div> <!-- localizacao_content -->
                 </div> <!-- localizacao -->
@@ -130,7 +133,7 @@
                     <h2>Veja o que as pessoas estão comentando</h2>
                     <div class="avaliacoes_cards flex">
                         <div class="avaliacao_card w30">
-                            <strong>Nome Sobrenome</strong>
+                            <strong>Camila H.</strong>
                             <div class="avaliacao_estrelas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -138,11 +141,11 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div> <!-- avaliacao_estrelas -->
-                            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, expedita corrupti! Impedit explicabo corrupti expedita repellat quam ullam odit delectus."</p>
+                            <p>"O atendimento foi excelente e a carta de vinho oferece opções para todos os gostos."</p>
                         </div> <!-- avaliacao_card -->
     
                         <div class="avaliacao_card w30">
-                            <strong>Nome Sobrenome</strong>
+                            <strong>Lúcio T.</strong>
                             <div class="avaliacao_estrelas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -150,11 +153,11 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div> <!-- avaliacao_estrelas -->
-                            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, expedita corrupti! Impedit explicabo corrupti expedita repellat quam ullam odit delectus."</p>
+                            <p>"Minha família gosta muito de frequentar o local. Recomendo."</p>
                         </div> <!-- avaliacao_card -->
     
                         <div class="avaliacao_card w30">
-                            <strong>Nome Sobrenome</strong>
+                            <strong>Gustavo K.</strong>
                             <div class="avaliacao_estrelas">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -162,7 +165,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div> <!-- avaliacao_estrelas -->
-                            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, expedita corrupti! Impedit explicabo corrupti expedita repellat quam ullam odit delectus."</p>
+                            <p>"A comida é preparada com muitos temperos diferentes. Adorei a experiência!"</p>
                         </div> <!-- avaliacao_card -->
                     </div> <!-- avaliacoes_cards -->
 
@@ -175,7 +178,35 @@
     </section> <!-- section_avaliacoes -->
 
     <footer>
-        <!-- Implementar footer -->
+        <div class="container flex space_between rodape">
+            <div class="cont flex w60 space_between">
+                <div class="institucional">
+                    <strong>Institucional</strong>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Seja um parceiro</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="ajuda">
+                    <strong>Ajuda</strong>
+                    <ul>
+                        <li>Tel:7575-6486</li>
+                        <li>De segunda à sábado das 08:00 às 20:00 horas, exceto feriados</li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="redes w30 flex column">
+                <strong>Redes sociais</strong>
+                <ul class="flex">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <script src="../js/jquery.js"></script>
