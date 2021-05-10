@@ -16,6 +16,10 @@
 
 /* #region Menu Acessibilidade */
 
+.dark-mode .botao_menu {
+    background-color: #333;
+    color: var(--text-secondary);
+}
 .dark-mode .menu_acessibilidade {
     background-color: #333;
     box-shadow: 1px 2px 10px black;

@@ -12,12 +12,18 @@
 </head>
 
 <body>
+    <div class="botao_menu flex">
+        <i class="fab fa-accessible-icon"></i>
+        <p class="botao_abrir">Menu de acessibilidade</p>
+        <p class="botao_fechar">Fechar menu</p>
+    </div> <!-- botao_menu -->
+
     <nav>
         <div class="menu_acessibilidade flex container">
             <a href="">Ir para conteúdo principal (Alt + 1)</a>
             <div class="menu_acessibilidade_fonte">
-                <a class="switch_font" href="#">A+</a>
-                <a class="switch_font" href="#">A-</a>
+                <a onClick="alterarFonte('a');" class="switch_font" href="#">A+</a>
+                <a onClick="alterarFonte('d');" class="switch_font" href="#">A-</a>
             </div> <!-- menu_acessibilidade_fonte -->
             <div class="menu_acessibilidade_tema flex">
                 <p>Tema</p>
