@@ -104,6 +104,3 @@ function renderRestaurantes() {
         cards.appendChild(aCard);
     }
 }
-
-// ToDo
-// Colocar nota, estrelas e comentários na mesma div

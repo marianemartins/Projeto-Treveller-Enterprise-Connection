@@ -55,7 +55,3 @@ $('.botao_fechar').on('click', function(){
     $('.botao_fechar').css('display','none');
     $('.botao_abrir').css('display','inline');
 })
-
-// ToDo
-// teclas de atalho - TESTAR
-// footer

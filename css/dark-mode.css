@@ -58,6 +58,12 @@
 .dark-mode .card:hover { box-shadow: 1px 2px 10px black; }
 .dark-mode .stars { color: var(--text-secondary); }
 .dark-mode .possui p { color: var(--text-secondary); }
+.dark-mode footer,
+.dark-mode footer a,
+.dark-mode footer i {
+    background-color: #333;
+    color: var(--text-secondary);
+}
 
 /* #endregion */
 
@@ -89,5 +95,13 @@
     .dark-mode .avaliacao_button button { color: var(--text-secondary); }
 
     /* #endregion */
+
+/* #endregion */
+
+/* #region Página Acessibilidade */
+
+.dark-mode .max:not(h1) {
+    color: var(--text-secondary);
+}
 
 /* #endregion */
